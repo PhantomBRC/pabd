@@ -220,7 +220,8 @@ public class TriangulosUI extends javax.swing.JFrame {
         
         
     }//GEN-LAST:event_calcActiinActionPerformed
-    }
+        }
+    
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_jLabel1MouseClicked
