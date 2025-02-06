@@ -5,6 +5,7 @@
 package ui_3inf2v;
 
 import java.util.Set;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -196,6 +197,14 @@ public class TriangulosUI extends javax.swing.JFrame {
     
     
     private void calcActiinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calcActiinActionPerformed
+        
+        JOptionPane.showMessageDialog(
+                null, 
+                "Preencha todos os lados",
+                "ERRO",
+                JOptionPane.ERROR_MESSAGE
+        );
+
         double a = Double.parseDouble(jTextField1.getText());
         double b = Double.parseDouble(jTextField2.getText());
         double c = Double.parseDouble(jTextField3.getText());
