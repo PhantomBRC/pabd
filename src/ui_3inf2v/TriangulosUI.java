@@ -198,14 +198,18 @@ public class TriangulosUI extends javax.swing.JFrame {
     
     private void calcActiinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calcActiinActionPerformed
         
-        JOptionPane.showMessageDialog(
+        if (jTextField1.getText().equals("")
+            || jTextField2.getText().equals("")
+            || jTextField3.getText().equals("")) {
+            JOptionPane.showMessageDialog(
                 null, 
                 "Preencha todos os lados",
                 "ERRO",
                 JOptionPane.ERROR_MESSAGE
         );
-
-        double a = Double.parseDouble(jTextField1.getText());
+        } 
+        
+        else {double a = Double.parseDouble(jTextField1.getText());
         double b = Double.parseDouble(jTextField2.getText());
         double c = Double.parseDouble(jTextField3.getText());
         double p = (a + b + c) / 2;
@@ -223,6 +227,11 @@ public class TriangulosUI extends javax.swing.JFrame {
                 }          
         } else  { tipoLabel.setText("Não é um triângulo");
                   areaLabel.setText("");
+        }
+        
+        
+
+        
         
         
         
